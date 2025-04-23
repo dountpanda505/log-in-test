@@ -40,3 +40,9 @@ window.onload = function() {
         }
     }
 };
+
+function logout() {
+    localStorage.setItem('logged_In', 'false');
+    window.location.replace("index.html");
+    console.log("User logged out. Redirecting to index.html...");
+}
